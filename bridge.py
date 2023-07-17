@@ -374,6 +374,30 @@ def main():
                 (5, 6, beam_coeff, beam_density),
             ],
         },
+        {
+            "pins": [
+                (0, 0, True),
+                (4 / 11, 0),
+                (7 / 11, 0),
+                (11 / 11, 0, True),
+                (0, 3 / 11),
+                (1 / 2, 3**1.5 / 22),
+                (1, 3 / 11),
+            ],
+            "beams": [
+                (0, 1, road_coeff, road_density),
+                (1, 2, road_coeff, road_density),
+                (2, 3, road_coeff, road_density),
+                (0, 4, beam_coeff, beam_density),
+                (1, 4, beam_coeff, beam_density),
+                (1, 5, beam_coeff, beam_density),
+                (2, 5, beam_coeff, beam_density),
+                (2, 6, beam_coeff, beam_density),
+                (3, 6, beam_coeff, beam_density),
+                (4, 5, beam_coeff, beam_density),
+                (5, 6, beam_coeff, beam_density),
+            ],
+        },
     ]
 
     for i, data in enumerate(bridge_data):
