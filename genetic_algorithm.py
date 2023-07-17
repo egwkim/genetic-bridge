@@ -3,13 +3,14 @@ import math
 
 from bridge import *
 
+# TODO Set proper moment-stress coefficient.
+ROAD_DENSITY = 500  # Road density relative to beam density
+ROAD_COEFF = 1  # Moment-Stress coeff of road
+BEAM_COEFF = 0  #  Moment-Stress coeff of beam
 
-ROAD_DENSITY = 30  # Road density relative to beam density
-ROAD_COEFF = 40  # Moment-Stress coeff of road
-BEAM_COEFF = 50  #  Moment-Stress coeff of beam
-
+# TODO Set proper road fitenss coeff
 # fitenss = max_road_stress * road_fitness_coeff + max_beam_stress
-ROAD_FITENSS_COEFF = 0.2
+ROAD_FITENSS_COEFF = 0
 
 
 INIT_SCALE = np.array([1.2, 3, 1.2, 3, 1.2, 3])
